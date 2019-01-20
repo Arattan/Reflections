@@ -10,13 +10,44 @@ The staging area allows you to add files to before committing them to the reposi
 What value do you think it offers?
 It allows you choose which files to commit to the repository; for you to determine the logical change in the commit. For you to work on different branches concurrently?
 
-
 How can you use the staging area to make sure you have one commit per logical change?
+
+By choosing which file(s) to add to a commit.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
+	Branches would be helpful when working on and adding new features to a repository and with fixing bugs and updating documentation. 
+
+	Branches help by being able to work on files and making commits within them, while separated from the the master version of the app so thus not affecting the master until they have been merged later. It allows you to write and test code and then only commit it all when it's fully working. 
+
+	The ability to label commits specifically to a branch also allows you to distinguish each from each other, thus making debugging and checkouts easier.
+
+
 How do the diagrams help you visualize the branch structure?
 
+	- Visualising the commit history particularly when the repository is non-linear.
+	- By being able to identify the parent of commits.
+	- Examine the reachability of commits in the repository.
+
+
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	- The commit history of both is combined in order of their timestamp; the consequence of which means that commits on the new merged branch will have different parents to compare changes with. The branch which was merged into the retained branch remains until it's label is deleted.
+	- The representation of the merge demonstrated the concepts of reachability and conflicts. 
+		- Reachability: 
+			a. when merged on to one branch, commits are now reachable on 	the combined version.
+			b. Post-merge, the branch merged into the other still exists and deleting that branch serves only to delete the name of the branch- not the commits themselves. 
+		- Conflicts:
+			a. Merges can be halted because the files on one branch were not in the same state as the other when you started the merge and git wouldn't know which to keep for merged branch version.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	Automatic merging
+		Pros - 	Timessaving; efficient identification of conflicts and 	
+				their location.
+		Cons - 	Not knowing the motive or full location of changes for a 		 highlighted conflict immediately when committed by 	
+				another collaborator; human error, i.e. merging branches when unintentionally checked-out in another branch.
+	Manual merging
+		Pros - 	Gain awareness of changes made in commit history by 	
+				others while working on a separate branch. 
+		Cons - Time-consumption in identifying differences; human error; 		confusion of commit changes.
