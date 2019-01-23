@@ -7,24 +7,29 @@ automatically stay up-to-date with your remote repository?
 
    To be in control of the state of the code. Another programmer could make unbeknown changes to the remote master or another branch causing confusion/conflicts if there was an automatic update. 
 
-   Further, manual updates enable you with the ability to pull code when it makes logical sense to. Automatic pulling might result in unfinished code being shared- problematic if the code was unfinished or the code pushed is made public or available to the team but can't run.
+   Further, manual updates enable you the ability to pull code when it makes logical sense to. Automatic pulling might result in unfinished code being shared- problematic if the code was unfinished or the code pushed is made public or available to the team but can't run.
 
-Describe the differences between forks, clones, and branches.  When would you
-use one instead of another?
+Describe the differences between forks, clones, and branches.  When would you use one instead of another?
 
-    Fill in your answer here
+    A fork is a copy of an existing repository present on GitHub's servers and copied directly to GitHub's servers, a clone is a local copy of a Github repository and a branch refers to a commit (or the label of a series of commits).
+
+    You would use a fork when you want to copy someone else's repository instead of downloading to your local computer or when you want to work on it but don't have modification rights to do so. In that latter instance, you would then choose to clone the fork on to your computer to directly modify it. Further, you would use a clone if you wanted to copy and modify a local repository which exists on your computer already. But more than merely copying, you choose the git clone action when you want to copy the commit history of the repository and not just the code/directory.
+
+    You would choose to create a new branch when working locally or collaboratively on an accessible repository for work that is not yet production-quality, such as on a new feature or fixing a bug. 
+
+    Branches can have the characteristic of not being reachable from the master branch so don't affect the current code or commit history. This subsequently makes using a branches ideal for collaboration within current projects because changes can be compartmentalised for each user. You wouldn't need to fork or clone off an entire repository- with it's metadata - in order to get a copied version of the code to then work on.
+ 
+
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
     Fill in your answer here
 
-How would you collaborate without using Git or GitHub?  What would be easier,
-and what would be harder?
+How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
     Fill in your answer here
 
-When would you want to make changes in a separate branch rather than directly in
-master?  What benefits does each approach have?
+When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
     Fill in your answer here
