@@ -20,11 +20,14 @@ Describe the differences between forks, clones, and branches.  When would you us
     Branches can have the characteristic of not being reachable from the master branch so don't affect the current code or commit history. This subsequently makes using a branches ideal for collaboration within current projects because changes can be compartmentalised for each user. You wouldn't need to fork or clone off an entire repository- with it's metadata - in order to get a copied version of the code to then work on.
  
 
-
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+	You can compare the diff between the remote and your local versions directly on your computer.  In a shared project with multiple versions, there is potential for your repository to be out of sync with the shared remote as other collaborators push changes to it.
+
+	Without such a local remote copy, pulling code direcly from the remote would otherwise risk pulling the rug from under you by creating conflicts. With the copy, you can choose what and when to merge.
+
+
 
 How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
