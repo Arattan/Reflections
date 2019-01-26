@@ -28,11 +28,16 @@ stored locally?
 	Without such a local remote copy, pulling code direcly from the remote would otherwise risk pulling the rug from under you by creating conflicts. With the copy, you can choose what and when to merge.
 
 
-
 How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
-    Fill in your answer here
+	You could talk, or use an email or chat medium to communicate and share files. 
+
+	They could ease communication by reducing the steps involved in GitHub, i.e. making requests, changes, comments, needing urls and commit Ids etc, and actually could make more sense in small projects. Further, while GitHub is great to log changes it's not ideal to clutter a repository with associated discussions about it, especially if they are not about code which is not committed.
+
+	 But the trade-off is with keeping order of changes which originate from others and can affect your work, and with organisation and  communication which Git and GitHub structure effectively.
 
 When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
-    Fill in your answer here
+	When you want to make changes in a collaborative environment, working on a separate branch allows you to make that change and offer a pull request to others for their inspection and approval before those changes are merged directly into the master. Making changes directly into the master can blindside others working with the same code. 
+
+	Further, the changes may not be ready to publish to the app so keeping those commits separated from the master assists in preventing confusion, bugs etc..
